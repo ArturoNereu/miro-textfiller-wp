@@ -15,3 +15,5 @@ Once installed, you'll find a new option in the bottomBar. This button was added
 I will assume that you are not a web developer (such as myself) and will start talking about the two files included in this Web-plugin. Also note that there are other ways to interact with Miro boards.
 
 We only have two files; an [`HTML`](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/index.html) and a [`JavaScript`](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/main.js) file. Both files need to be served via HTTP*s*. I'm using GitHub pages but also found [Tiiny Host](https://tiiny.host/) as an easy way to host and serve the plugin without spending too much time setting up a web server.
+
+Without going into too much details on how Miro fetches your Web-plugin (which I don't know), it basically requests your HTML and JS and "injects" it into a Miro board that has been previously authorized to install the Web-plugin
