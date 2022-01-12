@@ -19,3 +19,12 @@ We only have two files; an [`HTML`](https://github.com/ArturoNereu/miro-textfill
 Without going into too much details on how Miro fetches your Web-plugin (which I don't know), it basically requests your HTML and JS and "injects" it into a Miro board that has been previously authorized to install the Web-plugin.
 
 ![](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/media/diagram-wp.png)
+
+The [`index.html`](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/index.html) file is pretty short, think of it as a web page that doesn't render anything directly but loads Miro's SDK and our `JavaScript` file.
+
+```
+...
+    <script src="https://miro.com/app/static/sdk.1.1.js"></script>
+    <script src="main.js"></script>
+...
+```
