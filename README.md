@@ -28,3 +28,51 @@ The [`index.html`](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/i
     <script src="main.js"></script>
 ...
 ```
+
+The [`main.js`](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/main.js) has more code, but in reality is pretty straighforward.
+
+Let's split it in three main parts:
+
+#### Part 1
+```
+const icon = '<path ... />'
+const dummyText = "..."
+```
+We define two constants, `icon` which contains the SVG code for our custom icon to render and `dummyText`, a simple string generated using [Hipster Ipsum](https://hipsum.co/?paras=1&type=hipster-latin&start-with-lorem=1)
+
+#### Part 2
+```
+miro.onReady(() => {
+  miro.initialize({
+    extensionPoints: {
+      bottomBar: {
+        title: 'Text Filler',
+        svgIcon: icon,
+        positionPriority: 1,
+        
+        ...
+        
+      },
+    },
+  })
+})
+```
+This code, configures our extension after the board is ready and initialized. See that our tool is added to the bottomBar and the icon will be the icon we defined avobe.
+
+#### Part 3
+```
+onClick: async () => {
+
+          let shape = (await miro.board.widgets.get({type:'shape'}))[0]
+          await miro.board.viewport.zoomToObject(shape)
+          miro.board.widgets.update({id: shape.id, text: dummyText, style:{shapeBackgroundColor:'#7ac673'}})
+          miro.showNotification('Dummy Text Added to your Shape!')
+},
+```
+This last piece is actually the piece that gives our plugin its functionality. I feel that the Miro reference is self explanatory but in a nutshell we are:
+
+- getting the reference to the shapes in our board. For our example, we simply select the first registered one `[0]```
+- for a better UX, we zoom into the shape we selected
+- we update the text in the shape with our dummyText
+- we show a notification telling the user the function was executed
+
