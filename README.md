@@ -1,6 +1,6 @@
 ## Text Filler Web-plugin
 
-A simple web plugin that adds [Lorem Ipsum-like](https://hipsum.co/?paras=1&type=hipster-latin&start-with-lorem=1) text to any selected shape in your Board.
+A simple web plugin that adds [Lorem Ipsum-like](https://hipsum.co/?paras=1&type=hipster-latin&start-with-lorem=1) text to any shape in your Board.
 
 ### Try the [Text Filler Web-plugin](https://miro.com/oauth/authorize/?response_type=code&client_id=3458764516005409215&redirect_uri=%2Fconfirm-app-install%2F) in Miro.
 
