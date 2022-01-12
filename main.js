@@ -10,11 +10,11 @@ miro.onReady(() => {
         positionPriority: 1,
         onClick: async () => {
 
-        let shape = (await miro.board.widgets.get({type:'shape'}))[0]
-        await miro.board.viewport.zoomToObject(shape)
-        miro.board.widgets.update({id: shape.id, text: dummyText, style:{shapeBackgroundColor:'#7ac673'}})
+          let shape = (await miro.board.widgets.get({type:'shape'}))[0]
+          await miro.board.viewport.zoomToObject(shape)
+          miro.board.widgets.update({id: shape.id, text: dummyText, style:{shapeBackgroundColor:'#7ac673'}})
 
-        miro.showNotification('Dummy Text Added to your Shape!')
+          miro.showNotification('Dummy Text Added to your Shape!')
         },
       },
     },
