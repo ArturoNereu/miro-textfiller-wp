@@ -76,3 +76,7 @@ This last piece is actually the piece that gives our plugin its functionality. I
 - we update the text in the shape with our dummyText
 - we show a notification telling the user the function was executed
 
+### Known issues and features to add
+* if no shape is found, an exception will be thrown
+* we could allow the user to select all the shapes she wanted to add text to in batch
+* we could allow the user to configure the length of the text
