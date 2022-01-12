@@ -8,6 +8,6 @@ The Web-plugin is pretty simple and is meant to help you understand the basics o
 
 Once installed, you'll find a new option in the bottomBar. This button was added as a Web-plugin, and once pressed, it will add dummy text to a selected shape.
 
-
+![Text Filler in action](https://github.com/ArturoNereu/miro-textfiller-wp/blob/main/media/textfiller-wp.gif)
 
 I will assume that you are not a web developer (such as myself) and will start talking about the two files included in this Web-pluggin.
