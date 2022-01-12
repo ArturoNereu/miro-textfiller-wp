@@ -76,6 +76,9 @@ This last piece is actually the piece that gives our plugin its functionality. I
 - we update the text in the shape with our dummyText
 - we show a notification telling the user the function was executed
 
+### Why?
+Miro has a [Marketplace](https://miro.com/marketplace/)(I recently learned about it!) and you can publish your apps there. But also, if your company needs more functionality than the one built into Miro, you can add it.
+
 ### Known issues and features to add
 * if no shape is found, an exception will be thrown
 * we could allow the user to select all the shapes she wanted to add text to in batch
